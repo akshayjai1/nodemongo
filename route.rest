@@ -1,0 +1,16 @@
+@host=http://localhost:3099
+
+GET {{host}}/subscribers/
+
+###
+GET {{host}}/subscribers/5ecb3acb9cdaa32de0e12be2 http/1.1
+# @name
+
+###
+
+POST {{host}}/subscribers/
+
+{
+	"name":"Kyle",
+	"subscribedToChannel":"Web"
+}

@@ -7,10 +7,16 @@ GET {{host}}/subscribers/5ecb3acb9cdaa32de0e12be2 http/1.1
 # @name
 
 ###
-
+#https://blog.novanet.no/rest-client-for-visual-studio-code-auth/
+# @name login
 POST {{host}}/subscribers/
 
 {
 	"name":"Kyle",
 	"subscribedToChannel":"Web"
 }
+
+
+###
+
+DELETE {{host}}/subscribers/5ecb3acb9cdaa32de0e12be2 http/1.1

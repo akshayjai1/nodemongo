@@ -7,9 +7,14 @@ GET {{host}}/subscribers/5ecb3acb9cdaa32de0e12be2 http/1.1
 # @name
 
 ###
-#https://blog.novanet.no/rest-client-for-visual-studio-code-auth/
 # @name login
+
+#https://blog.novanet.no/rest-client-for-visual-studio-code-auth/
+
+
+###
 POST {{host}}/subscribers/
+Content-Type: "application/json"
 
 {
 	"name":"Kyle",
@@ -20,3 +25,10 @@ POST {{host}}/subscribers/
 ###
 
 DELETE {{host}}/subscribers/5ecb3acb9cdaa32de0e12be2 http/1.1
+
+PATCH {{host}}/subscribers/5ecbb038fd708ffbbeced885 HTTP/1.1
+Content-Type: "application/json"
+
+{
+	"name": "CDE"
+}
